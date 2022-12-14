@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Author pushkin = new Author("Александр", "Пушкин");
         Author lermontov = new Author("Михаил", "Лермонтов");
-        Book pikovayaDama = new Book(pushkin.getFamily(), 2021);
-        Book borodino = new Book(lermontov.getFamily(), 1965);
+        Book pikovayaDama = new Book("Пиковая дама",pushkin.getFamily(), 2021);
+        Book borodino = new Book("Бородино", lermontov.getFamily(), 1965);
 
         Book.display(pikovayaDama);
         Book.display(borodino);
