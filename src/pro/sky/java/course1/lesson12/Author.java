@@ -16,10 +16,10 @@ public class Author {
         return family;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
-    public void setFamily() {
+    public void setFamily(String family) {
         this.family = family;
     }
 }

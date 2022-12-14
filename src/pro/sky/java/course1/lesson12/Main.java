@@ -2,17 +2,16 @@ package pro.sky.java.course1.lesson12;
 
 public class Main {
     public static void main(String[] args) {
-        Author skyPro = new Author("SkyPro", "Java15");
-        Author noAuthor = new Author("moName", "noFamily");
-        Book lesson12 = new Book(skyPro.getName(), 12);
-        Book album = new Book(noAuthor.getName(), 10);
+        Author pushkin = new Author("Александр", "Пушкин");
+        Author lermontov = new Author("Михаил", "Лермонтов");
+        Book pikovayaDama = new Book(pushkin.getFamily(), 2021);
+        Book borodino = new Book(lermontov.getFamily(), 1965);
 
-        display(lesson12);
-        display(album);
+        Book.display(pikovayaDama);
+        Book.display(borodino);
 
-    }
-    public static void display(Book book){
-        System.out.println("book.getAuthor() = " + book.getAuthor());
-        System.out.println("book.getAmountSheets() = " + book.getAmountSheets());
+        System.out.println("\nКнига была переиздана:");
+        borodino.setYear(2022);
+        Book.display(borodino);
     }
 }
