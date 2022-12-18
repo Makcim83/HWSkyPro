@@ -1,4 +1,4 @@
-package pro.sky.java.course1.lesson12;
+package pro.sky.java.course1.lesson13;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,11 +7,11 @@ public class Main {
         Book pikovayaDama = new Book("Пиковая дама",pushkin, 2021);
         Book borodino = new Book("Бородино", lermontov, 1965);
 
-        Book.display(pikovayaDama);
-        Book.display(borodino);
+        System.out.println(pikovayaDama.toString());
+        System.out.println(borodino.toString());
 
         System.out.println("\nКнига была переиздана:");
         borodino.setYear(2022);
-        Book.display(borodino);
+        System.out.println(borodino.toString());
     }
 }
